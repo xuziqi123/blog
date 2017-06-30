@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>mv播放</title>
+</head>
+<link href="../css/publick.css" rel="stylesheet"/>
+<link href="../css/mv.css" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/publick.js"></script>
+<script src="../js/mv.js"></script>
+<body>
+<p class="header">
+    <a class="login" href="login.html">登录</a>
+    <a class="huanfu" href="#">换肤</a>
+</p>
+<div class="huanfu_box">
+    <img src="../images/close.svg" class='close'/>
+    <ul>
+        <li><img src="../images/1.jpg"/></li>
+        <li><img src="../images/2.jpg"/></li>
+        <li><img src="../images/3.jpg"/></li>
+        <li><img src="../images/15.jpg"/></li>
+        <li><img src="../images/5.jpg"/></li>
+        <li><img src="../images/6.jpg"/></li>
+        <li><img src="../images/7.jpg"/></li>
+        <li><img src="../images/8.jpg"/></li>
+        <li><img src="../images/10.jpg"/></li>
+        <li><img src="../images/11.jpg"/></li>
+        <li><img src="../images/12.jpg"/></li>
+        <li><img src="../images/16.jpg"/></li>
+    </ul>
+</div>
+<div class="head">
+    <div class="head_left">
+        <p class="touxiang fl"><img src="../images/touxiang2.jpg"></p>
+        <span class="my_name fl">半夏微凉$不言殇</span>
+        <p class="qianming fr">
+            <strong class="flay">签名：</strong><br/>
+            <span class="flay">你，生命中最重要的过客，之所以是过客，因为你未曾为我停留。</span>
+            <span class="flay">心之所想，行之所至;人生若只如初见，何事秋风悲画扇</span>
+            <span class="flay">撑着一苇江湖；等到云歇雨住，揽把稻香扶风看日出，浮生焕........</span>
+        </p>
+    </div>
+    <div class="head_right">
+
+        <ul id="nav_list" class="nav">
+            <li><a class="a"href="../index.html">首页</a></li>
+            <li><a href="#">我的世界</a>
+                <div class="nav_div">
+                    <ol>
+                        <li><a href="#">我的文档</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="web.html">Web前端</a>
+                <div class="nav_div"  style="display:none">
+                    <ol>
+                        <li><a href="#">个人文档</a></li>
+                        <li><a href="http://localhost/musicdianbo/html/index2.html">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="liuyanban.html">留言版</a></li>
+            <li><a href="mv.html">闲言碎语</a>
+                <div class="nav_div" style="display:none">
+                    <ol>
+                        <li><a href="#">个人文档</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="study.html">学无止境</a></li>
+            <li><a href="moban.html">模板展示</a></li>
+        </ul>
+        <!--/*时钟开始*/-->
+        <div id="fancyClock">
+            <div class="orange clock">
+                <div class="display" id="hours">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="orangeRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="orangeRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="blue clock">
+                <div class="display" id="minuts">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="blueRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="blueRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="green clock">
+                <div class="display" id="seconds">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="greenRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="greenRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+        </div>
+        <!--/*时钟结束*/-->
+        <!--天气开始-->
+        <div class="wheather fr">
+            <p> <span class="span1">天水</span><span class="span1">空气质量<em class="good">优</em></span></p>
+            <p><img src="../images/sun.jpg"/> <span class="span1">今晴</span><span class="span2">15~25℃</span></p>
+        </div>
+        <!--天气结束-->
+    </div>
+</div>
+<div class="main">
+    <!--最先推荐开始-->
+    <div class="main_left fl">
+        <p class="hot_title"><img src="../images/hot.svg"class="fl"/>热门点击<span class="fr"></span></p>
+        <div class="tuijian hot">
+            <ul>
+                <li><span>1</span><a href="#">什么是静态和动态网页？</a></li>
+                <li><span>2</span><a href="#">生活</a></li>
+                <li><span>3</span><a href="#">一个前端的自我修养</a></li>
+                <li><span>4</span><a href="http://extjs-doc-cn.github.io/ext4api/">构造前端工具之Extjs</a></li>
+                <li><span>5</span><a href="#">电子工业通用企业网页模板</a></li>
+                <li><span>6</span><a href="#">2016优秀个人博客排名公布</a></li>
+                <li><span>7</span><a href="#">分享我的个人博客访问量如何做到Ip从10到100</a></li>
+                <li><span>8</span><a href="#">帝国cms常用标签调用方法总结（不得不收藏)</a></li>
+                <li><span>9</span><a href="#">使用CSS3制作文字、图片倒影</a></li>
+         </ul>
+        </div>
+        <!--热门点击结束-->
+        <!--每日一笑开始-->
+        <p class="hot_title"><img src="../images/hot.svg"class="fl"/>今日热点<span class="fr"></span></p>
+        <div class="tuijian perday">
+            <ul>
+                <li>
+                    <div class="mv fl">
+                        <a href="mv.html" class="a_img"><img src="../images/yifan.png" dataSrc="http://player.video.qiyi.com/38dbf77a3fc2944ce70cd3943048c55c/0/0/v_19rr9gx37s.swf-albumId=542422500-tvId=542422500-isPurchase=0-cnId=7"/></a>
+                        <p class="cover"><img src="../images/bo.svg"/></p>
+                    </div>
+                    <a href="#" class="fr a2">什么是静态和动态网页？</a>
+                    <a href="#" class="a3"><img src="../images/xiao.svg"/></a>
+                </li>
+                <li>
+                    <div class="mv fl">
+                        <a href="mv.html" class="a_img"><img src="../images/wuyifan.png" dataSrc="http://player.video.qiyi.com/65f6e31d4143b0d665309cf4dfe08936/0/0/w_19rsoe6li9.swf-albumId=6071191309-tvId=6071191309-isPurchase=0-cnId=7"/></a>
+                        <p class="cover"><img src="../images/bo.svg"/></p>
+                    </div>
+                    <a href="#" class="fr a2">什么是静态和动态网页？</a><br/>
+                    <a href="#" class="a3"><img src="../images/xinqu.svg"/></a>
+                </li>
+                <li>
+                    <div class="mv fl">
+                        <a href="mv.html" class="a_img"><img src="../images/wuyifan1.png" dataSrc="http://player.video.qiyi.com/3bf0a525b49163f4ad69d2f830c62e57/0/0/v_19rr9jwowk.swf-albumId=537070200-tvId=537070200-isPurchase=0-cnId=7"/></a>
+                        <p class="cover"><img src="../images/bo.svg"/></p>
+                    </div>
+                    <a href="#" class="fr a2">什么是静态和动态网页？</a><br/>
+                    <a href="#" class="a3"><img src="../images/like.svg"/></a>
+                </li>
+            </ul>
+        </div>
+        <!--每日一笑结束-->
+    </div>
+    <div class="main_right fl">
+        <div>
+            <h2 class="title">神一般的后期制作</h2>
+            <p class="resum"><span>发布时间：2016-10-2 13:50:44</span><span>编辑：徐紫琪个人博客网站</span><span>阅读：（67）</span></p>
+            <div class="big_mv">
+                 <p class="con_mv">
+                    <embed src="http://player.video.qiyi.com/38dbf77a3fc2944ce70cd3943048c55c/0/0/v_19rr9gx37s.swf-albumId=542422500-tvId=542422500-isPurchase=0-cnId=7" allowFullScreen="true" quality="high" width="526" height="350" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+                 </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <ul>
+        <li><a href="http://www.miaov.com/">妙味课堂</a></li>
+        <li><a href="http://tuiwuwang.com/">无锡CEO</a></li>
+        <li><a href="http://www.liuyuyao.com/">刘玉尧博客 </a></li>
+        <li><a href="http://www.hjj5.com/">何晶晶博客</a></li>
+        <li><a href="http://www.jinxinblog.com/"> web前端 </a></li>
+        <li><a href="http://tuku.hongyaxuan.com/">中式装修图库</a></li>
+        <li><a href="http://www.tymood.com/"> 心情簿</a></li>
+    </ul>
+    <p>Design by 半夏微凉$不言殇 友情链接QQ：2642316974</p>
+</div>
+</body>
+</html>

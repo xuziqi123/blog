@@ -1,0 +1,19 @@
+.main_left #user,#sendBox h4,#btnPost,.regh4,#showMore{width:90%;margin:5px auto;text-align:center;border-radius:4px;height:25px;line-height:25px;position:relative;top:0px;left:0px;background: #cbfaf7;}
+#sendBox,.box{width:95%;border:1px solid greenyellow;margin:5px auto;}
+#sendBox textarea{width:90%;height:120px;margin:5px 0 0 15px;}
+#sendBox #btnPost{width:90%;text-align:center;color:black;}
+.input{width:90%;height:30px;border:2px solid greenyellow;border-radius:50px;margin:10px 0 0 15px;background-color:transparent;}
+.main_right .list{width:98%;margin:10px auto;}
+.list dl{width:98%;border:1px solid black;margin:5px auto;background:-webkit-linear-gradient(top,greenyellow,white);}
+.list dt span{width:100%;height:70px;}
+.list dt span img{width:50px;height:50px;margin:5px 0 0 5px;}
+.list dt span a{width:300px;text-indent:15px;display:block;height:50px;font:bold 14px/50px arial,sans-serif ;}
+.list dd{content:'';clear:both;}
+.list .bot_dd{width:100%;height:30px;}
+.time,.ding{width:50px;height:20px;float:right;margin-right:15px;font:12px/20px;color:gray;}
+.time{width:150px;font:12px/20px arial,sans-serif;color:gray;}
+.list dl .content{font:12px/25px arial,sans-serif;text-indent:18px;}
+.page{border:1px solid greenyellow;width:130px;background:white;text-align:center;height:20px;display:block;margin:5px 0px 0 680px;color:gray;border-radius:40px;}
+.page span{width:60px;height:20px;display:block;float:left;}
+.page span em{width:30px;height:20px;font:14px/14px arial,sans-serif;}
+._btn{width:30px;height:30px;position:absolute;}

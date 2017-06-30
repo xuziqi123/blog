@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>blog半夏微凉$不言殇</title>
+</head>
+<link href="css/publick.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/publick.js"></script>
+<script src="js/blog.js"></script>
+<body >
+<p class="header">
+    <a class="login" href="html/login.html">登录</a>
+    <a class="huanfu" href="#">换肤</a>
+</p>
+<div class="huanfu_box">
+    <img src="images/close.svg" class='close'/>
+    <ul>
+        <li><img src="images/1.jpg"/></li>
+        <li><img src="images/2.jpg"/></li>
+        <li><img src="images/3.jpg"/></li>
+        <li><img src="images/15.jpg"/></li>
+        <li><img src="images/5.jpg"/></li>
+        <li><img src="images/6.jpg"/></li>
+        <li><img src="images/7.jpg"/></li>
+        <li><img src="images/8.jpg"/></li>
+        <li><img src="images/10.jpg"/></li>
+        <li><img src="images/11.jpg"/></li>
+        <li><img src="images/12.jpg"/></li>
+        <li><img src="images/16.jpg"/></li>
+    </ul>
+</div>
+<div class="head">
+    <div class="head_left">
+        <p class="touxiang fl"><img src="images/touxiang2.jpg"></p>
+        <span class="my_name fl">半夏微凉$不言殇</span>
+        <p class="qianming fr">
+            <strong class="flay">签名：</strong><br/>
+            <span class="flay">你，生命中最重要的过客，之所以是过客，因为你未曾为我停留。</span>
+            <span class="flay">心之所想，行之所至;人生若只如初见，何事秋风悲画扇</span>
+            <span class="flay">撑着一苇江湖；等到云歇雨住，揽把稻香扶风看日出，浮生焕........</span>
+        </p>
+    </div>
+    <div class="head_right">
+        <ul id="nav_list" class="nav">
+            <li><a class="a" href="index.html">首页</a></li>
+            <li><a href="html/world.html">我的世界</a>
+                <div class="nav_div">
+                    <ol>
+                        <li><a href="#">我的文档</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="html/web.html">Web前端</a>
+                <div class="nav_div"  style="display:none">
+                    <ol>
+                        <li><a href="#">个人文档</a></li>
+                        <li><a href="http://localhost/musicdianbo/html/index2.html">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="html/liuyanban.html">留言版</a></li>
+            <li><a href="html/mv.html">闲言碎语</a>
+                <div class="nav_div" style="display:none">
+                    <ol>
+                        <li><a href="#">个人文档</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="html/study.html">学无止境</a></li>
+            <li><a href="html/moban.html">模板展示</a></li>
+        </ul>
+        <!--/*时钟开始*/-->
+        <div id="fancyClock">
+            <div class="orange clock">
+                <div class="display" id="hours">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="orangeRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="orangeRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="blue clock">
+                <div class="display" id="minuts">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="blueRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="blueRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="green clock">
+                <div class="display" id="seconds">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="greenRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="greenRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+        </div>
+        <!--/*时钟结束*/-->
+        <!--天气开始-->
+        <div class="wheather fr">
+             <p> <span class="span1">天水</span><span class="span1">空气质量<em class="good">优</em></span></p>
+            <p><img src="images/sun.jpg"/> <span class="span1">今晴</span><span class="span2">15~25℃</span></p>
+        </div>
+        <!--天气结束-->
+    </div>
+</div>
+<div class="music">
+    <div class="control">
+        <span class="msc_img fl"><img src="images/wu.jpg"/></span>
+        <p class="_btn fl">
+            <a href="#" class="prev_a"><img src="images/上一首.svg"/></a>
+            <a href="#" class="ting_a"><img src="images/bofang1.svg"/></a>
+            <a href="#" class="next_a"><img src="images/下一首%20(1).svg"/></a>
+            <a href="#" class="list"><img src="images/list.svg"/></a>
+            <a href="#" class="list list2"><img src="images/xunhuan.svg"/></a>
+
+        </p>
+        <div class="jindu"><span class="span1"></span><span class="span2"></span></div>
+        <img class='back' src="images/but.png"/>
+    </div>
+    <div class="btn_list">
+        <ul>
+            <li><img src="images/danqu.svg"/><span>单曲循环</span></li>
+            <li><img src="images/xunhuan.svg"/><span>列表循环</span></li>
+            <li><img src="images/suiji.svg"/><span>随机播放</span></li>
+            <li><img src="images/shunxu.svg"/><span>顺序播放</span></li>
+        </ul>
+    </div>
+    <div class="div_list">
+        <ul>
+            <li><a href="javascript:void(0);" dataSrc="MP3/孙子涵 - 连借口都没有.mp3">孙子涵 - 连借口都没有</a></li>
+            <li><a href="javascript:void(0);" dataSrc="MP3/许嵩 - 江湖.mp3">许嵩 - 江湖</a></li>
+            <li><a href="javascript:void(0);" dataSrc="MP3/刘珂矣 - 渡风.mp3">刘珂矣 - 渡风</a></li>
+            <li><a href="javascript:void(0);" dataSrc="MP3/吴亦凡 - 刀剑如梦.mp3">吴亦凡 - 刀剑如梦</a></li>
+        </ul>
+    </div>
+    <div class="music_play"></div>
+</div>
+<div class="main">
+    <!--最先推荐开始-->
+    <div class="main_left fl">
+        <img src="images/tuijian.png" class="tuijian_img"/>
+        <div class="tuijian">
+            <ul>
+                <li><span>1</span><a href="#">什么是静态和动态网页？</a></li>
+                <li><span>2</span><a href="#">生活</a></li>
+                <li><span>3</span><a href="#">一个前端的自我修养</a></li>
+                <li><span>4</span><a href="http://extjs-doc-cn.github.io/ext4api/">构造前端工具之Extjs</a></li>
+                <li><span>5</span><a href="#">电子工业通用企业网页模板</a></li>
+                <li><span>6</span><a href="#">2016优秀个人博客排名公布</a></li>
+                <li><span>7</span><a href="#">分享我的个人博客访问量如何做到Ip从10到100</a></li>
+                <li><span>8</span><a href="#">帝国cms常用标签调用方法总结（不得不收藏)</a></li>
+                <li><span>9</span><a href="#">使用CSS3制作文字、图片倒影</a></li>
+            </ul>
+        </div>
+        <!--最先推荐结束-->
+        <div class="four">
+            <span><a href="#">个人日记</a></span>
+            <span><a href="#">视频教程</a></span>
+            <span><a href="#">Web前端</a></span>
+            <span><a href="#">Seo优化</a></span>
+        </div>
+        <!--热门点击开始-->
+        <p class="hot_title"><img src="images/hot.svg"class="fl"/>热门点击<span class="fr"></span></p>
+        <div class="tuijian hot">
+            <ul>
+                <li><span>1</span><a href="#">什么是静态和动态网页？</a></li>
+                <li><span>2</span><a href="#">生活</a></li>
+                <li><span>3</span><a href="#">一个前端的自我修养</a></li>
+                <li><span>4</span><a href="http://extjs-doc-cn.github.io/ext4api/">构造前端工具之Extjs</a></li>
+                <li><span>5</span><a href="#">电子工业通用企业网页模板</a></li>
+                <li><span>6</span><a href="#">2016优秀个人博客排名公布</a></li>
+                <li><span>7</span><a href="#">分享我的个人博客访问量如何做到Ip从10到100</a></li>
+                <li><span>8</span><a href="#">帝国cms常用标签调用方法总结（不得不收藏)</a></li>
+                <li><span>9</span><a href="#">使用CSS3制作文字、图片倒影</a></li>
+            </ul>
+        </div>
+        <!--热门点击结束-->
+        <!--webq前端开始-->
+        <p class="hot_title"><img src="images/Web (1).svg"class="fl"/>WEB前端<span class="fr"></span></p>
+        <div class="tuijian hot">
+            <ul>
+                <li><span>1</span><a href="#">浅谈html与html5的区别？</a></li>
+                <li><span>2</span><a href="#">html5移动端手机网站开发流程</a></li>
+                <li><span>3</span><a href="#">关于响应式布局</a></li>
+                <li><span>4</span><a href="http://extjs-doc-cn.github.io/ext4api/">构造前端工具之Extjs</a></li>
+                <li><span>5</span><a href="#">构造前端工具之bootstap</a></li>
+                <li><span>6</span><a href="#">Webapp开发之“rem”单</a></li>
+                <li><span>7</span><a href="#">JS实现div自动居中代码</a></li>
+            </ul>
+        </div>
+        <!--webq前端结束-->
+        <!--最先留言开始-->
+        <p class="hot_title"><img src="images/hot.svg"class="fl"/>最新留言<span class="fr"></span></p>
+
+        <div class="tuijian allways liuyan">
+            <ul>
+                <li><img src="images/qq.jpg"/><span class="liuyan_name fl">若愚浅香</span><span class="liuyan_time fl">2015-14-13 15:50:55</span><a href="#">卡说的话嘎嘎大海龟看过的发货？</a></li>
+                <li><img src="images/9.jpg"/><span class="liuyan_name fl">姚鑫</span><span class="liuyan_time fl">2015-14-13 15:50:55</span><a href="#">微信公众号 搜 “超好看影院” 免费领取爱奇艺等VIP账号 还能在线观看各种大片 内设一区、二区、三区，绝对有你想要的！</a></li>
+                <li><img src="images/14.jpg"/><span class="liuyan_name fl">吴宁宁</span><span class="liuyan_time fl">2015-14-13 15:50:55</span><a href="#">在 如何建立个人博客？ 中评论楼主，我对网站的建设也有自己的见解，这是我的网站，我们可以交流一下。 http://www.jfeet.com</a></li>
+                <li><img src="images/27.jpg"/><span class="liuyan_name fl">半夏微凉</span><span class="liuyan_time fl">2015-14-13 15:50:55</span><a href="#">在 Webpack之“多页面开发”最佳实战 中评论小帅哥一个啊？</a></li>
+                <li><img src="images/24.jpg"/><span class="liuyan_name fl">巴黎左岸</span><span class="liuyan_time fl">2015-14-13 15:50:55</span><a href="#">完善网站基本功能：增加内页评论功能...？</a></li>
+                <li><img src="images/8.jpg"/><span class="liuyan_name fl">刘琳琳</span><span class="liuyan_time fl">2015-14-13 15:50:55</span><a href="#">博客风格进行改版，并优化网站细节。</a></li>
+                <li><img src="images/28.jpg"/><span class="liuyan_name fl">富华大厦</span><span class="liuyan_time fl">2015-14-13 15:50:55</span><a href="#">关于前端的主流框架以及就业前景？</a></li>
+                <li><img src="images/15.jpg"/><span class="liuyan_name fl">哈撒旦</span><span class="liuyan_time fl">2015-14-13 15:50:55</span><a href="#">什么是哈说的话怪怪的撒嘎哈四大皆空嘎哈？</a></li>
+            </ul>
+        </div>
+        <!--最新结束-->
+        <!--每日一笑开始-->
+        <p class="hot_title"><img src="images/hot.svg"class="fl"/>今日热点<span class="fr"></span></p>
+        <div class="tuijian perday">
+            <ul>
+                <li>
+                    <div class="mv fl">
+                        <a href="mv.html" class="a_img"><img src="images/yifan.png" dataSrc="http://player.video.qiyi.com/38dbf77a3fc2944ce70cd3943048c55c/0/0/v_19rr9gx37s.swf-albumId=542422500-tvId=542422500-isPurchase=0-cnId=7"/></a>
+                        <p class="cover"><img src="images/bo.svg"/></p>
+                    </div>
+                    <a href="#" class="fr a2">什么是静态和动态网页？</a>
+                    <a href="#" class="a3"><img src="images/xiao.svg"/></a>
+                </li>
+                <li>
+                    <div class="mv fl">
+                        <a href="mv.html" class="a_img"><img src="images/wuyifan.png" dataSrc="http://player.video.qiyi.com/65f6e31d4143b0d665309cf4dfe08936/0/0/w_19rsoe6li9.swf-albumId=6071191309-tvId=6071191309-isPurchase=0-cnId=7"/></a>
+                        <p class="cover"><img src="images/bo.svg"/></p>
+                    </div>
+                    <a href="#" class="fr a2">什么是静态和动态网页？</a><br/>
+                    <a href="#" class="a3"><img src="images/xinqu.svg"/></a>
+                </li>
+                <li>
+                    <div class="mv fl">
+                        <a href="mv.html" class="a_img"><img src="images/wuyifan1.png" dataSrc="http://player.video.qiyi.com/3bf0a525b49163f4ad69d2f830c62e57/0/0/v_19rr9jwowk.swf-albumId=537070200-tvId=537070200-isPurchase=0-cnId=7"/></a>
+                        <p class="cover"><img src="images/bo.svg"/></p>
+                    </div>
+                    <a href="#" class="fr a2">什么是静态和动态网页？</a><br/>
+                    <a href="#" class="a3"><img src="images/like.svg"/></a>
+                </li>
+            </ul>
+        </div>
+        <!--每日一笑结束-->
+    </div>
+    <div class="main_right fr">
+        <!--轮播图开始-->
+        <div class="lunbo fl">
+            <ul class="big_ul">
+                <li><img src="images/12.jpg"></li>
+                <li><img src="images/13.jpg"></li>
+                <li><img src="images/14.jpg"></li>
+                <li><img src="images/15.jpg"></li>
+                <li><img src="images/16.jpg"></li>
+                <li><img src="images/17.jpg"></li>
+                <li><img src="images/18.jpg"></li>
+                <li><img src="images/19.jpg"></li>
+                <li><img src="images/20.jpg"></li>
+                <li><img src="images/21.jpg"></li>
+                <li><img src="images/22.jpg"></li>
+                <li><img src="images/23.jpg"></li>
+                <li><img src="images/24.jpg"></li>
+                <li><img src="images/25.jpg"></li>
+                <li><img src="images/26.jpg"></li>
+                <li><img src="images/27.jpg"></li>
+                <li><img src="images/28.jpg"></li>
+            </ul>
+            <div class="btn_con">
+                <img src="images/prev.svg" class="prev_btn"/>
+                <img src="images/next.svg" class="next_btn"/>
+                <div class="btn_box">
+                <ul class="small_ul">
+                    <li ><img src="images/12.jpg"></li>
+                    <li><img src="images/13.jpg"></li>
+                    <li><img src="images/14.jpg"></li>
+                    <li><img src="images/15.jpg"></li>
+                    <li><img src="images/16.jpg"></li>
+                    <li><img src="images/17.jpg"></li>
+                    <li><img src="images/18.jpg"></li>
+                    <li><img src="images/19.jpg"></li>
+                    <li><img src="images/20.jpg"></li>
+                    <li><img src="images/21.jpg"></li>
+                    <li><img src="images/22.jpg"></li>
+                    <li><img src="images/23.jpg"></li>
+                    <li><img src="images/24.jpg"></li>
+                    <li><img src="images/25.jpg"></li>
+                    <li><img src="images/26.jpg"></li>
+                    <li><img src="images/27.jpg"></li>
+                    <li><img src="images/28.jpg"></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <p class="ambit fl">
+            <img src="images/24.jpg">
+        </p>
+        <!--轮播图结束-->
+        <!--文章推荐开始-->
+        <div style="clear:both"></div>
+        <div class="content">
+            <p class="con_title"><img src="images/jinpin.svg" class="fl">文章推荐<span class="fr"></span></p>
+            <div class="_content">
+                <dl>
+                    <dt>
+                       <h3 class="h3">个人博客评测，你敢来，我就敢说~~(第一期)</h3>
+                    </dt>
+                    <dd>
+                        <p  class="con_img fl"><img src="images/28.jpg" /></p>
+                        <p  class="fl">看到很多博客站长给我留言，我有空的 时候我都会去看看。现在本站的模板已经不更新的，为的就是大家能做出更多的原创模板。不管你是自己原创的，还是东拼西凑伪原创的，都可以跟帖留言，把你的网站地址留下来，我会筛选一些博客，然后写出测评报告。</p>
+                        <p class="open"> <a href="#">展开全文&gt&gt</a></p>
+                    </dd>
+                   <p class="con_bottom"><img src="images/time.svg"/><span class="time">2019-13-34 20:30:30</span><span>作者：徐紫琪</span><span>个人博客[心得笔记]</span></p>
+                </dl>
+                <dl>
+                    <dt>
+                    <h3 class="h3">一个前端的自我修养</h3>
+                    </dt>
+                    <dd>
+                        <p  class="con_img fl"><img src="images/12.jpg" /></p>
+                        <p  class="fl">今天给大家分享的主题是前端的自我成长,这是一个关于成长的话题。 很多人都有这样的感觉:听了很多技术圈子的分享,有的有深度,有的循循善诱,深入浅出,但是呢!几年下来,到底哪些用上了,哪些对自己真的有帮助--</p>
+                        <p class="open"> <a href="#">展开全文&gt&gt</a></p>
+                    </dd>
+                    <p class="con_bottom"><img src="images/time.svg"/><span class="time">2019-13-34 20:30:30</span><span>作者：徐紫琪</span><span>个人博客[心得笔记]</span></p>
+                </dl>
+                <dl>
+                    <dt>
+                    <h3 class="h3">ExtJS之“多页面开发”最佳实战</h3>
+                    </dt>
+                    <dd>
+                        <p  class="con_img fl"><img src="images/22.jpg" /></p>
+                        <p  class="fl">前言：相信之前看过这篇文章， 前端构建工具之“Extjs” 的朋友,对于Extjs有了一定的了解。那么今天 就跟大家分享下：如何利用Extjs，来进行多页面项目实战开发。 一、项目初始化安装;Ext是一个用jscript(javascript)所写的一个ajax框架(我想大家都知道什么是ajax了吧,假想你已经知道,那我就不说了).而javascript也是更知道它的概念了,就更不用说了吧,好,那就也不说了.什么是Ext呢,结合javascript和ajax,我想你闭眼猜都能够猜出它的功能了吧.那就用自己的语言说下什么是Ext吧,呵呵,思考真的很重要的.学习的重要环节就是要不断的自己总结,总结就来自自己的思考. </p>
+                        <p class="open"> <a href="#">展开全文&gt&gt</a></p>
+                    </dd>
+                    <p class="con_bottom"><img src="images/time.svg"/><span class="time">2019-13-34 20:30:30</span><span>作者：徐紫琪</span><span>个人博客[心得笔记]</span></p>
+                </dl>
+                <dl>
+                    <dt>
+                    <h3 class="h3">Boootstap之“多页面开发”最佳实战</h3>
+                    </dt>
+                    <dd>
+                        <p  class="con_img fl"><img src="images/boot.jpg" /></p>
+                        <p  class="fl">Bootstrap，来自 Twitter，是目前最受欢迎的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的，它简洁灵活，使得 Web 开发更加快捷。
+                            本教程将向您讲解 Bootstrap 框架的基础，通过学习这些内容，您将可以轻松地创建 Web 项目。教程被分为 Bootstrap 基本结构、Bootstrap CSS、Bootstrap 布局组件和 Bootstrap 插件几个部分。每个部分都包含了与该主题相关的简单有用的实例。 </p>
+                        <p class="open"> <a href="#">展开全文&gt&gt</a></p>
+                    </dd>
+                    <p class="con_bottom"><img src="images/time.svg"/><span class="time">2019-13-34 20:30:30</span><span>作者：徐紫琪</span><span>个人博客[心得笔记]</span></p>
+                </dl>
+                <dl>
+                    <dt>
+                    <h3 class="h3">HTML5移动端手机网站开发流程</h3>
+                    </dt>
+                    <dd>
+                        <p  class="con_img fl"><img src="images/35.jpg" /></p>
+                        <p  class="fl">最近一直在研究移动手机网站的开发，发现做手机网站没有想象中的那么难。为什么会这么说呢？我们试想下:我们连传统的PC网站都会做， 难道连一个小小的手机网站难道都搞不定吗？其实手机网站就是 </p>
+                        <p class="open"> <a href="#">展开全文&gt&gt</a></p>
+                    </dd>
+                    <p class="con_bottom"><img src="images/time.svg"/><span class="time">2019-13-34 20:30:30</span><span>作者：徐紫琪</span><span>个人博客[心得笔记]</span></p>
+                </dl>
+                <dl>
+                    <dt>
+                    <h3 class="h3">如何学习网页制作（个人经验）</h3>
+                    </dt>
+                    <dd>
+                        <p  class="con_img fl"><img src="images/book.jpg" /></p>
+                        <p  class="fl">最近看了聪哥的（SEO白手起家的创业录）有很深的感触!我觉得有一些话说得很有道理：如果你分享的东西，不是你亲自经历过，或者实践过的话， 你的分享是很难打动别人和得到别人的认同。其实最真实</p>
+                        <p class="open"> <a href="#">展开全文&gt&gt</a></p>
+                    </dd>
+                    <p class="con_bottom"><img src="images/time.svg"/><span class="time">2019-13-34 20:30:30</span><span>作者：徐紫琪</span><span>个人博客[心得笔记]</span></p>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+        <ul>
+            <li><a href="http://www.miaov.com/">妙味课堂</a></li>
+            <li><a href="http://tuiwuwang.com/">无锡CEO</a></li>
+            <li><a href="http://www.liuyuyao.com/">刘玉尧博客 </a></li>
+            <li><a href="http://www.hjj5.com/">何晶晶博客</a></li>
+            <li><a href="http://www.jinxinblog.com/"> web前端 </a></li>
+            <li><a href="http://tuku.hongyaxuan.com/">中式装修图库</a></li>
+            <li><a href="http://www.tymood.com/"> 心情簿</a></li>
+        </ul>
+    <p>Design by 半夏微凉$不言殇 友情链接QQ：2642316974</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<link href="../css/login.css" rel="stylesheet"/>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/publick.js"></script>
+<script src="../js/guestbook.js"></script>
+<body style="background:url(../images/8.jpg) no-repeat;background-size:100% 100%">
+<div id="user" style="margin-bottom: 10px;">
+    <h4><span id="userinfo"></span> <a href="" id="logout">退出</a></h4>
+</div>
+<div id="login" class="reg">
+    <h4 class="regh4">欢迎登陆</h4>
+    <div class="regdiv">
+        <p class="reg_p"><input type="text" name="username2" id="username2" placeholder="请输入用户名"></p>
+        <p class="reg_p"><input type="password" name="password2" id="password2" placeholder="请输入密码"></p>
+        <input type="checkbox" class="check fl"/><a href="#" class="check_a fl">记住密码</a>
+        <div style="clear:both;"></div>
+        <p class="reg_p">
+            <span class="fl" id="zhucebtn"><a href="#">注册</a></span>
+            <span class="fr find" id=""><a href="#">找回密码</a></span>
+        </p>
+        <a href="javascript:void(0)" class="reg_a" id="btnLogin" >登录</a>
+    </div>
+</div>
+<div id="regist" class="reg reg_zhuce">
+    <h4 class="regh4">欢迎注册</h4>
+    <div class="regdiv ">
+        <p class="reg_p"><input type="text" name="username" id="username1" placeholder="请输入用户名"></p>
+        <p class="tishi" id="verifyUserNameMsg"></p>
+        <p class="reg_p"><input type="password" name="password" id="password1" placeholder="请输入密码"></p>
+        <a href="javascript:void(0)" class="reg_a" id="btnReg">注册</a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link href="../css/publick.css" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<link href="../css/moban.css" rel="stylesheet"/>
+<link href="../css/study.css" rel="stylesheet"/>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/publick.js"></script>
+<body >
+<div class="head">
+    <div class="head_left">
+        <p class="touxiang fl"><img src="../images/touxiang2.jpg"></p>
+        <span class="my_name fl">半夏微凉$不言殇</span>
+        <p class="qianming fr">
+            <span class="flay">人生，是一场盛大的遇见</span>
+            <span class="flay">我长路漫漫，只因学无止境</span>
+            <span class="flay">趁我们还年轻，多欣赏沿途的风景，不要错过了流年里的人和物~~</span>
+        </p>
+    </div>
+    <div class="head_right">
+        <ul id="nav_list" class="nav">
+            <li><a class="a" href="../index.html">首页</a></li>
+            <li><a href="world.html">我的世界</a><li><a href="#">唯美相册</a>
+            <div class="nav_div"  style="display:none">
+                <ol>
+                    <li><a href="#">个人文档</a></li>
+                    <li><a href="http://localhost/musicdianbo/html/index2.html">我的乐库</a></li>
+                    <li><a href="#">慢生活</a></li>
+                    <li><a href="#">旅行</a></li>
+                    <li><a href="#">我的梦</a></li>
+                    <li><a href="#">生涯</a></li>
+                    <li><a href="#">我的好友</a></li>
+                    <li><a href="#">最近心情</a></li>
+                    <li><a href="#">我的乐库</a></li>
+                    <li><a href="#">我的梦</a></li>
+                    <li><a href="#">生涯</a></li>
+                    <li><a href="#">我的好友</a></li>
+                </ol>
+            </div>
+        </li>
+            <li><a href="liuyanban.html">留言版</a></li>
+            <li><a href="mv.html">闲言碎语</a> </li>
+            <li><a href="study.html">学无止境</a></li>
+            <li><a href="moban.html">模板展示</a></li>
+        </ul>
+        <!--/*时钟开始*/-->
+        <div id="fancyClock">
+            <div class="orange clock">
+                <div class="display" id="hours">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="orangeRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="orangeRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="blue clock">
+                <div class="display" id="minuts">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="blueRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="blueRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="green clock">
+                <div class="display" id="seconds">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="greenRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="greenRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+        </div>
+        <!--/*时钟结束*/-->
+        <!--天气开始-->
+        <div class="wheather fr" style="top:75px;">
+            <p> <span class="span1">天水</span><span class="span1">空气质量<em class="good">优</em></span></p>
+            <p><img src="../images/sun.jpg"/> <span class="span1">今晴</span><span class="span2">15~25℃</span></p>
+        </div>
+        <!--天气结束-->
+    </div>
+</div>
+<div class="main">
+    <!--最先推荐开始-->
+    <div class="main_l fl">
+        <div class="left_top fl">
+            <div class="con "><img src="../images/12.jpg"/><p>只要你有PSD模板（原创）即可参与评选活动！集思广益，各位爱好设计的小伙伴们，拿出你们最得意的作品，曾经设计过的，或者正在设计中的PSD源文件，并且愿意参加本活动，本站将评选出前三名优秀的博客设计模板，免费写出相应的Html页面！</p></div>
+            <div class="con _con"><img src="../images/book2.jpg"/><p>本站郑重申明只提供静态模板下载，拒绝伸手党！本站所有能提供的模板均已发布，喜欢就下载！下载是干嘛的？！学习参考！初衷就是让更多喜欢web设计的新手能从中找到乐趣，以及开发设计更多更好的模板！</p></div>
+            <div class="con"><img src="../images/xue1.jpg"/><p>博客从最初的域名购买，到上线已经有四年的时间了，这四年的时间，有笑过，有怨过，有悔过，有执着过，也有放弃过…但最后还是坚持了下来，时间如此匆匆，等再回过头已来不及去弥补。</p></div>
+            <div class="con _con"><img src="../images/xue2.jpg"/><p>今天给大家分享的主题是前端的自我成长，这是一个关于成长的话题。
+                很多人都有这样的感觉：听了很多技术圈子的分享，有的有深度、有的循循善诱、深入浅出。但是呢！几年下来，到底哪些用上了，哪些对自己真的有帮助了？反而有些模糊。
+                2015 年我在不同的场合分享了很多内容:有移动端的性能、有适配、有 Web vs Native，也有 hybrid，但是其实我一直比较担心,真正有深度的内容，其实面向的是比较小众的群体，比如说 Hybrid，其实它在大部分公司里面，是只能用现成的。所以我这一次尝试分享一个我认为可以帮助到所有前端的话题,
+                关于前端的成长，如果说这个分享的内容，听众里面有那么几十个人拿到 BAT 的 offer，或者升职加薪，那么我觉得我就认为我取得了成功。</p></div>
+            <div class="con _con"><img src="../images/xue3.jpg"/><p>最近刚好帮客户做一个网站，需要用到dede的自定义表单功能。可是有个这样的需求，就是当表单提交成功后，要返回一个自定义页面的提示功能!可能是觉得dede自带的提示太low的原因吧!(一不小心又黑了下)
+                好啦，废话不多说。我们一起来看看，怎么去修改系统自带的提示窗口呢!</p></div>
+            <div class="con _con"><img src="../images/xue4.jpg"/><p>用过dedecms的朋友都知道dede自带的文本编辑器很不好用，且有些功能还需要我们自己手动去修改源码，才能完成我们想要的效果。现在广大用dedecms的朋友们，你们有福啦！我们可以利用百度的Ueditor编辑器来改变这一状况，让dede的文本编辑功能变得更加的强大。
+                下面我教大家如何利用百度的（ueditor）编辑器替换dede自带的编辑器:</p></div>
+
+            <div class="con "><img src="../images/xue5.jpg"/><p>前言：这篇文章,本来准备在去年年底的时候,分享给大家的。可由于年末工作比较忙的原因,再加上自己的一些情况,就一直拖到现在才开始写。
+                好了废话不多说啦!我们一起来看看,手淘的这个“flexible”库是怎么用的。
+                在学会用之前,我们还是先了解一些东西吧!</p></div>
+            <div class="con _con"><img src="../images/xue6.jpg"/><p>今天在找资料的时候,发现了一篇关于“javascript与jQuery”文章。讲得还不错,拿来给大家一起分享下: 其实很多刚初学JS的朋友们,都会纠结一个问题? 是什么问题呢? “学习前端到底是先学javascript还是</p></div>
+            <div class="con"><img src="../images/xue7.jpg"/><p>最近趁着自己有点时间,就把自己博客的个人日记模块改进了下。
+                可能大家都知道:以前个人日记这个模块,都是通过普遍的文章列表加+分页的形式来进行展示的。可效果却又采用了CSS3+时光轴的效果来制作的,总感觉有点不搭配。很早前就想通过ajax异步去从数据库拿取数据,可一直没有时间和其它原因的问题,就把这件事给忘记了。
+                好了,废话就不多扯了!我们一起来看看:dedecms如何通过ajax(异步)动态获取文章列表数据。</p></div>
+            <div class="con _con"><img src="../images/book2.jpg"/><p>今天整理自己的学习笔记时:发现了一些关于js中的鼠标距离值之间的相关知识,对于一些刚学习js的朋友们应该有点帮助,今天就分享给大家。
+                废话不多说,我们先上张图,看完图,我们在说:</p></div>
+            <div class="con _con"><img src="../images/xue9.jpg"/><p>前言:学会使用jQuery并不难,因为它简单易学,并且相信你接触jQuery后肯定也使用或熟悉了不少其插件。如果想要将自己能力提升一个台阶,编写一个属于自己的插件,或许是一个不错的选择。
+                我们首先来了解下： jQuery插件的开发模式
+                软件开发过程中是需要一定的设计模式来指导开发的,有了模式,我们就能更好地组织我们的代码,并且从这些前人总结出来的模式中学到很多好的实践</p></div>
+            <div class="con _con"><img src="../images/q4.jpg"/><p>不知不觉,做移动端开发也有半年的时间了。从刚开始接触移动端开发,到现在的细节完善。期间也走了很多坑!为什么会走这么多坑呢?
+                可能身边做前端开发的朋友比较少,想找个人一起研究技术的都没。也加过一些前端群,大多数些扯淡聊天的群。没办法,只得自己去苦逼的研究!
+                下面一起来分享下,我做移动端开发半年来的一些经验,以及需要注意的一些东西吧!</p></div>
+        </div>
+        <div class="section fl">
+            <p class="hot_title"><img src="../images/hot.svg"class="fl"/>热门点击<span class="fr"></span></p>
+            <div class="tuijian hot muban">
+                <ul>
+                    <li><span>1</span><a href="#">什么是静态和动态网页？</a></li>
+                    <li><span>2</span><a href="#">生活</a></li>
+                    <li><span>3</span><a href="#">一个前端的自我修养</a></li>
+                    <li><span>4</span><a href="http://extjs-doc-cn.github.io/ext4api/">构造前端工具之Extjs</a></li>
+                    <li><span>5</span><a href="#">电子工业通用企业网页模板</a></li>
+                    <li><span>6</span><a href="#">2016优秀个人博客排名公布</a></li>
+                    <li><span>7</span><a href="#">分享我的个人博客访问量如何做到Ip从10到100</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="section section2 fl">
+            <p class="hot_title"><img src="../images/Web (1).svg"class="fl"/>WEB前端<span class="fr" style="width:50%;"></span></p>
+            <div class="tuijian hot muban">
+                <ul>
+                    <li><span>1</span><a href="#">浅谈html与html5的区别？</a></li>
+                    <li><span>2</span><a href="#">html5移动端手机网站开发流程</a></li>
+                    <li><span>3</span><a href="#">关于响应式布局</a></li>
+                    <li><span>4</span><a href="http://extjs-doc-cn.github.io/ext4api/">构造前端工具之Extjs</a></li>
+                    <li><span>5</span><a href="#">构造前端工具之bootstap</a></li>
+                    <li><span>6</span><a href="#">Webapp开发之“rem”单</a></li>
+                    <li><span>7</span><a href="#">JS实现div自动居中代码</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main_r mian_left fr">
+        <div class="search">
+            <p class="sear_p"> <input type="text" class="text" placeholder="搜索"/><img src="../images/search.svg" class="sear_img"/></p>
+        </div>
+        <!--最新文章开始-->
+        <p class="hot_title"><img src="../images/Web (1).svg"class="fl"/>最新文章<span class="fr" style="width:50%;"></span></p>
+        <div class="tuijian hot muban">
+            <ul>
+                <li><span>1</span><a href="#">IP要突破2000+了</a></li>
+                <li><span>2</span><a href="#">帝国cms首页、自定义页面如何实现分页</a></li>
+                <li><span>3</span><a href="#">【已评选】给我模板PSD源文件，我给你设计</a></li>
+                <li><span>4</span><a href="http://extjs-doc-cn.github.io/ext4api/">【郑重申明】本站只提供静态模板下载！</a></li>
+                <li><span>5</span><a href="#">【孕期日记】生活本该如此</a></li>
+                <li><span>6</span><a href="#">【匆匆那些年】总结个人博客经历的这四</a></li>
+                <li><span>7</span><a href="#">2014年度优秀个人博客排名公布</a></li>
+                <li><span>8</span><a href="http://extjs-doc-cn.github.io/ext4api/">2014年度优秀个人博客评选活动</a></li>
+                <li><span>9</span><a href="#">使用CSS3制作文字、图片倒影</a></li>
+                <li><span>10</span><a href="#">【活动作品】柠檬绿兔小白个人博客模板</a></li>
+            </ul>
+        </div>
+        <!--最新文章开始-->
+        <!--个人模板展示开始-->
+        <p class="hot_title"><img src="../images/Web (1).svg"class="fl"/>模板展示<span class="fr" style="width:50%;"></span></p>
+        <div class="tuijian muban1">
+            <ul class="mb_ul">
+                <li><a>个人模板</a></li>
+                <li><a>企业模板</a></li>
+                <li><a>娱乐模板</a></li>
+                <li><a>博客模板</a></li>
+                <li><a>其他模板</a></li>
+            </ul>
+            <div>
+                <ol>
+                    <li><img src="../images/bo1.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/bo2.jpg"/><span>餐馆模板</span></li>
+                    <li><img src="../images/bo3.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/bo14.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/bo11.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/bo6.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/bo7.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/bo8.png"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/bo9.png"/><span>黑色大气响应式餐馆模板</span></li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li><img src="../images/qi1.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi2.jpg"/><span>餐馆模板</span></li>
+                    <li><img src="../images/qi3.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi4.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi5.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi6.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi7.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi8.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi9.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li><img src="../images/yu1.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/yu2.jpg"/><span>餐馆模板</span></li>
+                    <li><img src="../images/yu3.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/yu4.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/yu5.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/yu6.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/yu7.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/yu8.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/yu9.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li><img src="../images/qi1.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi2.jpg"/><span>餐馆模板</span></li>
+                    <li><img src="../images/qi3.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi4.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi5.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi6.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi7.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi8.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi9.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                </ol>
+            </div>
+            <div>
+                <ol>
+                    <li><img src="../images/q10.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/q2.jpg"/><span>餐馆模板</span></li>
+                    <li><img src="../images/q3.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/q4.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/q5.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/qi6.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/q7.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/q8.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                    <li><img src="../images/q9.jpg"/><span>黑色大气响应式餐馆模板</span></li>
+                </ol>i
+            </div>
+        </div>
+        <!--个人模板展示结束-->
+        <!--最新模板开始-->
+        <p class="hot_title" style="margin-top:25px"><img src="../images/Web (1).svg"class="fl"/>最新模板<span class="fr" style="width:50%;"></span></p>
+        <div class="tuijian hot muban">
+            <ul>
+                <li><span>1</span><a href="http://www.yangqq.com/download/div/2016-09-11/752.html">个人博客评测，你敢来，我就敢说！（第一</a></li>
+                <li><span>2</span><a href="http://www.yangqq.com/download/div/2015-06-28/748.html">个人博客《草根寻梦》—手机版模板</a></li>
+                <li><span>3</span><a href="http://www.yangqq.com/download/div/2015-04-10/746.html">【活动作品】柠檬绿兔小白个人博客模板</a></li>
+                <li><span>4</span><a href="http://extjs-doc-cn.github.io/ext4api/">【郑重申明】本站只提供静态模板下载！</a></li>
+                <li><span>5</span><a href="http://www.yangqq.com/download/div/2014-09-18/730.html">情侣博客模板系列之《回忆》Html</a></li>
+                <li><span>6</span><a href="http://www.yangqq.com/download/div/2014-08-18/727.html">情侣博客模板系列之《回忆》PSD</a></li>
+                <li><span>7</span><a href="http://www.yangqq.com/download/div/2014-08-11/726.html">情侣博客模板系列之《初夏》Html</a></li>
+                <li><span>8</span><a href="http://extjs-doc-cn.github.io/ext4api/">2014年度优秀个人博客评选活动</a></li>
+                <li><span>9</span><a href="http://www.yangqq.com/download/div/2014-06-13/689.html">个人博客模板《世界杯来袭》</a></li>
+                <li><span>10</span><a href="情侣博客模板系列之《初夏》PSD">【活动作品】柠檬绿兔小白个人博客模板</a></li>
+            </ul>
+        </div>
+        <!--最新模板结束-->
+        <div class="four">
+            <span><a href="#">个人日记</a></span>
+            <span><a href="#">视频教程</a></span>
+            <span><a href="#">Web前端</a></span>
+            <span><a href="#">Seo优化</a></span>
+        </div>
+    </div>
+</div>
+<div class="bottom">
+    <ul>
+        <li><a href="http://www.miaov.com/">妙味课堂</a></li>
+        <li><a href="http://tuiwuwang.com/">无锡CEO</a></li>
+        <li><a href="http://www.liuyuyao.com/">刘玉尧博客 </a></li>
+        <li><a href="http://www.hjj5.com/">何晶晶博客</a></li>
+        <li><a href="http://www.jinxinblog.com/"> web前端 </a></li>
+        <li><a href="http://tuku.hongyaxuan.com/">中式装修图库</a></li>
+        <li><a href="http://www.tymood.com/"> 心情簿</a></li>
+    </ul>
+    <p>Design by 半夏微凉$不言殇 友情链接QQ：2642316974</p>
+</div>
+</body>
+</html>

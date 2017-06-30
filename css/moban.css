@@ -1,0 +1,31 @@
+body{background:url(../images/55.jpg) no-repeat;background-size:1336px 1900px;}
+.head{box-shadow:0px 0px 8px white;border-radius:50%;background:url(../images/40.jpg) no-repeat 0px 38px;background-size:100% 100%;}
+/*×ó±ß¿ªÊ¼*/
+.main{width:80%;margin:10px auto;}
+.main_l{width:62%;height:100%;border-right:1px dotted yellow;}
+.main_r{width:35%;height:100%;border-right:1px dotted yellow;}
+.main_l .left_top{width:100%;height:70%;margin:4px 0 0 15px;}
+.main_l .section{width:47%;height:30%;background:url(../images/51.jpg);background-size:100% 100%;margin:10px 0 0 18px;}
+.main_l .section2{margin-left:5px;}
+.main_l .left_top .con{width:95%;height:150px;border-radius:5px;border:2px solid white;margin:5px 0 0 3px;background:url(../images/1.gif);}
+.main_l .left_top ._con{background:url(../images/2.gif);}
+.section .muban ul li a{color: rgba(25, 42, 42, 0.91);}
+.section p{color:red;}
+.main_r .hot_title{color:orangered;}
+.section  p span{background:skyblue;}
+.main_l .left_top .con img{width:161px;height:141px;transition:1s;float:left;margin-left:10px;border-radius:50%;box-shadow:2px 2px 8px white;}
+.main_l .left_top .con p{width:70%;height:90%;float:right;color: #e5ff9f;font:12px/20px arial,sans-serif;margin-top:15px;}
+.main_l .left_top .con img:hover{-webkit-transform:scale(1.3);}
+/*×ó±ß½áÊø*/
+/*ÓÒ±ß¿ªÊ¼*/
+.tuijian .mb_ul{width:100%;height:35px;}
+.tuijian .mb_ul li{width:18%;height:25px;text-align:center;float:left;border:1px dotted greenyellow;margin:3px 0 0 4px;padding:0px;}
+.tuijian .mb_ul li a{width:100%;height:100%;margin-left:0px;color:white;}
+.tuijian .mb_ul li a:hover{-webkit-transform:translate(0px);color:red;}
+.muban1{width:95%;height:400px;position:relative;}
+.muban1 div{width:98%;height:95%;background:pink;position:absolute;top:40px;left:5px;}
+.muban1 div ol{width:100%;height:100%;}
+.muban1 div ol li img{height:65px;width:90px;}
+.muban1 div ol li{width:29%;height:110px;border:1px solid greenyellow;float:left;margin:10px 0 0 10px;}
+.muban1 div ol li span{width:90%;height:35px;font:12px/20px arial,sans-serif;color:greenyellow;border-radius:4px;background:rgba(0,0,0,0.7);}
+/*ÓÒ±ß½áÊø*/

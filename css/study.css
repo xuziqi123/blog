@@ -1,0 +1,38 @@
+/*学无止境开始*/
+body{background:url(../images/bg6.jpg) no-repeat;background-size:1336px 2900px;}
+.head{background:url(../images/bg1.jpg);background-size:100% 100%;border-radius:5px;}
+.main_l .left_top .con{background:url(../images/51.jpg);background-size:100% 100%;}
+.main_l .left_top .con p{color:darkslategray;overflow:hidden;}
+.main_r .tuijian ul li a{color:darkslategray;}
+/*学无止境结束*/
+/*我的世界*/
+.main-w{width:90%;height:950px;margin:10px auto;}
+.main-w .main_wtL{width:48%;height:300px;box-shadow:0px 0px 8px white;margin:5px 10px 0 10px;}
+.main-w .main_wtR{width:50%;height:300px;background:url(../images/bjj1.jpg);background-size:100% 100%;margin:5px 0 0 0;}
+.main-w .main_wtR ul{width:380px;height:190px;position:relative;top:70px;left:100px;}
+.main-w .main_wtR ul li{width:85%;height:25px;float:left;margin:0px 0 0 70px;border-bottom:1px dotted darkgray;font:13px/25px arial,sans-serif;text-algin:center;}
+.main-w .main_wtL ul{width:100%;height:100%;position:relative;}
+.main-w .main_wtL ul li{width:98%;height:98%;position:absolute;top:3px;left:5px;display:none;}
+.main-w .main_wtL ul li img{width:100%;height:100%;}
+.main-w .main_wtL ol{width:40%;height:20px;position:relative;bottom:40px;left:300px;}
+.main-w .main_wtL ol li{width:35px;height:5px;background:orange;float:left;margin:10px 0 0 10px;}
+.main-w .main_wtL ol li.run{background:orangered;}
+.main_wcon{width:98%;height:600px;clear:both;margin:0px auto;position:relative;}
+.main_wcon .line{width:100%;height:3px;background:white;display:block;position:relative;top:60px;}
+.main_wcon ._wtitle{width:90%;height:30px;position:absolute;top:45px;}
+.main_wcon ._wtitle span{display:block;width:20%;transition:1s;float:left;height:40px;background:url(../images/19.jpg);background-size:100% 100%;font:bold 16px/40px arial,sans-serif;text-align:center;margin-left:50px;}
+.main_wcon ._wtitle span:hover{-webkit-transform:rotateX(360deg);}
+.main_wcon .section_w{width:23%;height:750px;border:3px solid white;border-radius:10px;float:left;margin:95px 0 0 15px;}
+.section_w p{width:98%;height:76%;margin:5px auto;background:rgba(0,0,0,0.6);color:white;font:12px/20px arial,sans-serif;}
+.section_w img{width:96%;height:17%;margin-left:5px;}
+.section_w h3{width:100%;height:30px;border-radius:4px;margin-top:5px;text-align:center;background:-webkit-linear-gradient(top,#BF6022,white);}
+/*最新文章*/
+.word_tuij{width:95%;}
+.word_tuij p{width:100%;height:40px;font:bold 15px/40px arial,sans-serif;color:orangered;}
+.word_tuij p img{width:35px;height:35px;}
+
+
+
+
+
+

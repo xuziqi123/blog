@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<link href="../css/liuyanban.css" rel="stylesheet"/>
+<link href="../css/publick.css" rel="stylesheet"/>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/ajax.js"></script>
+<script src="../js/publick.js"></script>
+<script src="../js/liuyan.js"></script>
+<body>
+<div class="head">
+    <div class="head_left">
+        <p class="touxiang fl"><img src="../images/touxiang2.jpg"></p>
+        <span class="my_name fl">半夏微凉$不言殇</span>
+        <p class="qianming fr">
+            <strong class="flay">签名：</strong><br/>
+            <span class="flay">你，生命中最重要的过客，之所以是过客，因为你未曾为我停留。</span>
+            <span class="flay">心之所想，行之所至;人生若只如初见，何事秋风悲画扇</span>
+            <span class="flay">撑着一苇江湖；等到云歇雨住，揽把稻香扶风看日出，浮生焕........</span>
+        </p>
+    </div>
+    <div class="head_right">
+
+        <ul id="nav_list" class="nav">
+            <li><a class="a"href="../index.html">首页</a></li>
+            <li><a href="world.html">我的世界</a>
+                <div class="nav_div">
+                    <ol>
+                        <li><a href="#">我的文档</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="#">唯美相册</a>
+                <div class="nav_div"  style="display:none">
+                    <ol>
+                        <li><a href="#">个人文档</a></li>
+                        <li><a href="http://localhost/musicdianbo/html/index2.html">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="liuyanban.html">留言版</a></li>
+            <li><a href="mv.html">闲言碎语</a>
+                <div class="nav_div" style="display:none">
+                    <ol>
+                        <li><a href="#">个人文档</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="study.html">学无止境</a></li>
+            <li><a href="moban.html">模板展示</a></li>
+        </ul>
+        <!--/*时钟开始*/-->
+        <div id="fancyClock">
+            <div class="orange clock">
+                <div class="display" id="hours">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="orangeRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="orangeRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="blue clock">
+                <div class="display" id="minuts">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="blueRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="blueRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="green clock">
+                <div class="display" id="seconds">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="greenRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="greenRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+        </div>
+        <!--/*时钟结束*/-->
+        <!--天气开始-->
+        <div class="wheather fr" style="top:75px;">
+            <p> <span class="span1">天水</span><span class="span1">空气质量<em class="good">优</em></span></p>
+            <p><img src="../images/sun.jpg"/><span class="span1">今晴</span><span class="span2">15~25℃</span></p>
+        </div>
+        <!--天气结束-->
+    </div>
+</div>
+<div class="main">
+    <div class="main_left fl">
+        <div id="sidebar">
+            <div id="user" style="margin-bottom: 10px;">
+                <h4><span id="userinfo"class="fl" ></span> <a href="#" class="fl"  id="logout">退出</a></h4>
+            </div>
+
+            <!-- 注册 -->
+            <div id="reg" class="box">
+                <h4 class="regh4">注册</h4>
+                <div>
+                    <p><input type="text" class="input" name="username" id="username1"placeholder="请输入用户名"></p>
+                    <p id="verifyUserNameMsg"></p>
+                    <p><input type="password" class="input" name="password" id="password1" placeholder="请输入密码"></p>
+                    <a href="#" class="regh4" id="btnReg" >注册</a>
+                </div>
+            </div>
+
+            <!-- 登陆 -->
+            <div id="login" class="reg box">
+                <h4 class="regh4">欢迎登陆</h4>
+                <div>
+                    <p><input type="text"  class="input" name="username2" id="username2" placeholder="请输入用户名"></p>
+                    <p><input type="password"class="input"  name="password2" id="password2"placeholder="请输入密码"></p>
+
+                    <a href="#" class="regh4" id="btnLogin" >登录</a>
+                </div>
+            </div>
+            <!-- 留言发表 -->
+            <div id="sendBox"  class="box">
+                <h4>发表留言</h4>
+                <div>
+                    <textarea id="content"></textarea>
+                    <a href="#" class="regh4"  id="btnPost" >提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_right fr">
+        <p class="page"><span>第<em class="em1"></em>页/</span><span>共<em class="em2"></em>页</span></p>
+        <div class="list">
+            <!--
+            <dl>
+                <dt>
+                    <span><img src="../images/2.jpg" class="fl" /><a href="#"class="fl">徐子淇</a></span>
+                </dt>
+                <dd>
+                    内容
+                </dd>
+                <dd class="bot_dd">
+                    <span class="time">时间</span>
+                    <a href="javascript:;"class="ding" id="support">顶(<span>0</span>)</a>
+                    <a href="javascript:;" class="ding"id="oppose">踩(<span>0</span>)</a>
+                </dd>
+            </dl>
+            -->
+        </div>
+        <div id="showMore">显示更多...</div>
+    </div>
+</div>
+</body>
+</html>
