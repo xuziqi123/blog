@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>简单图表</title>
+</head>
+<link href="../css/publick.css" rel="stylesheet"/>
+<link href="../css/mv.css" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script src="../js/publick.js"></script>
+<script src="../js/mv.js"></script>
+<script src="../js/echarts.common.min.js"></script>
+<style>
+    #box{width:85%;height:500px;background:lightpink;margin:5% auto;padding-top:3%;}
+</style>
+<body>
+<p class="header">
+    <a class="login" href="login.html">登录</a>
+    <a class="huanfu" href="#">换肤</a>
+</p>
+<div class="huanfu_box">
+    <img src="../images/close.svg" class='close'/>
+    <ul>
+        <li><img src="../images/1.jpg"/></li>
+        <li><img src="../images/2.jpg"/></li>
+        <li><img src="../images/3.jpg"/></li>
+        <li><img src="../images/15.jpg"/></li>
+        <li><img src="../images/5.jpg"/></li>
+        <li><img src="../images/6.jpg"/></li>
+        <li><img src="../images/7.jpg"/></li>
+        <li><img src="../images/8.jpg"/></li>
+        <li><img src="../images/10.jpg"/></li>
+        <li><img src="../images/11.jpg"/></li>
+        <li><img src="../images/12.jpg"/></li>
+        <li><img src="../images/16.jpg"/></li>
+    </ul>
+</div>
+<div class="head">
+    <div class="head_left">
+        <p class="touxiang fl"><img src="../images/touxiang2.jpg"></p>
+        <span class="my_name fl">半夏微凉$不言殇</span>
+        <p class="qianming fr">
+            <strong class="flay">签名：</strong><br/>
+            <span class="flay">你，生命中最重要的过客，之所以是过客，因为你未曾为我停留。</span>
+            <span class="flay">心之所想，行之所至;人生若只如初见，何事秋风悲画扇</span>
+            <span class="flay">撑着一苇江湖；等到云歇雨住，揽把稻香扶风看日出，浮生焕........</span>
+        </p>
+    </div>
+    <div class="head_right">
+
+        <ul id="nav_list" class="nav">
+            <li><a class="a"href="../index.html">首页</a></li>
+            <li><a href="world.html">我的世界</a></li>
+            <li><a href="webEcharts.html">Web前端</a>
+                <div class="nav_div"  style="display:none">
+                    <ol>
+                        <li><a href="#">个人文档</a></li>
+                        <li><a href="http://localhost/musicdianbo/html/index2.html">我的乐库</a></li>
+                        <li><a href="#">慢生活</a></li>
+                        <li><a href="#">旅行</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                        <li><a href="#">最近心情</a></li>
+                        <li><a href="#">我的乐库</a></li>
+                        <li><a href="#">我的梦</a></li>
+                        <li><a href="#">生涯</a></li>
+                        <li><a href="#">我的好友</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li><a href="liuyanban.html">留言版</a></li>
+            <li><a href="mv.html">闲言碎语</a></li>
+            <li><a href="study.html">学无止境</a></li>
+            <li><a href="moban.html">模板展示</a></li>
+        </ul>
+        <!--/*时钟开始*/-->
+        <div id="fancyClock">
+            <div class="orange clock">
+                <div class="display" id="hours">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="orangeRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="orangeRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="blue clock">
+                <div class="display" id="minuts">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="blueRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="blueRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+            <div class="green clock">
+                <div class="display" id="seconds">00</div>
+                <div class="front left"></div>
+                <div class="rotate left" id="greenRotateLeft">
+                    <div class="bg left"></div>
+                </div>
+                <div class="rotate right" id="greenRotateRight">
+                    <div class="bg right"></div>
+                </div>
+            </div>
+        </div>
+        <!--/*时钟结束*/-->
+        <!--天气开始-->
+        <div class="wheather fr">
+            <p> <span class="span1">天水</span><span class="span1">空气质量<em class="good">优</em></span></p>
+            <p><img src="../images/sun.jpg"/> <span class="span1">今晴</span><span class="span2">15~25℃</span></p>
+        </div>
+        <!--天气结束-->
+    </div>
+</div>
+<div id="box">
+    <div id="cyclinder" style="width:31%;height:80%;float:left;"></div>
+    <div id="circle" style="width:31%;height:80%;float:left;"></div>
+    <div id="discounting" style="width:31%;height:80%;float:left;"></div>
+</div>
+<script type="text/javascript">
+    var cyclinder=document.getElementById("cyclinder");
+    var circle=document.getElementById("circle");
+    var Discounting=document.getElementById("discounting");
+    //基于准备好的dom,初始化ecahrts实例
+    var echartsCys=echarts.init(cyclinder);
+    //初始化饼状图的ecahrts实例
+    var circleEchar=echarts.init(circle);
+    //初始化折线图的echart实例
+    var discountingEc=echarts.init(Discounting);
+    //指定图标的配置项和数据
+    var option= {
+        title: {
+            text: "天水市销量情况图表"
+        },
+        itemStyle:{
+            mormal:{
+                color:"oargne"
+            }
+        },
+        tooltip: {},
+        legend: {
+            data: ["日用品销量"]
+        },
+        xAxis: {
+            data: ["衬衫", "羊毛衫", "T恤", "短裤", "高跟鞋", "裙子", "洗衣液"]
+        },
+        yAxis: {},
+        series: [{
+            name: "销量",
+            type: "bar",
+            data: [5, 20, 36, 10, 10,30,15]
+        }]
+    };
+
+    //使用指定的配置项显示图标
+    echartsCys.setOption(option);
+
+    //绘制饼状图
+    circleEchar.setOption({
+        title: {
+            text: "天水师院创新实验室方向分布"
+        },
+        itemStyle:{
+            normal:{
+                shadowBlur:50,
+                shadowColor: 'rgba(0, 0, 0, 0.5)'
+            },
+            //hover时高亮显示
+            emphasis:{
+                shadowBlur:100,
+                shadowColor: 'rgba(0, 0, 0, 0.8)'
+            }
+
+        },
+        series:[
+            {
+                name:"访问来源",
+                type:"pie",
+                roseType:'angle',
+                radius:"55%",
+                data:[
+                    {value:235,name:"嵌入式开发"},
+                    {value:240,name:"电源开发"},
+                    {value:355,name:"web前端"},
+                    {value:200,name:"网络后台运维"},
+                    {value:300,name:"linux程序设计"},
+                    {value:400,name:"android开发"}
+                ]
+            }
+        ]
+    });
+    //绘制折线图
+    var optionDis = {
+
+        tooltip: {
+            trigger: 'axis'
+        },
+        legend: {
+            data:['最高气温','最低气温']
+        },
+        toolbox: {
+            show: true,
+            feature: {
+                dataZoom: {
+                    yAxisIndex: 'none'
+                },
+                dataView: {readOnly: false},
+                magicType: {type: ['line', 'bar']},
+                restore: {},
+                saveAsImage: {}
+            }
+        },
+        xAxis:  {
+            type: 'category',
+            boundaryGap: false,
+            data: ['周一','周二','周三','周四','周五','周六','周日']
+        },
+        yAxis: {
+            type: 'value',
+            axisLabel: {
+                formatter: '{value} °C'
+            }
+        },
+        series: [
+            {
+                name:'最高气温',
+                type:'line',
+                data:[11, 11, 15, 13, 12, 13, 10],
+                markPoint: {
+                    data: [
+                        {type: 'max', name: '最大值'},
+                        {type: 'min', name: '最小值'}
+                    ]
+                },
+                markLine: {
+                    data: [
+                        {type: 'average', name: '平均值'}
+                    ]
+                }
+            },
+            {
+                name:'最低气温',
+                type:'line',
+                data:[1, -2, 2, 5, 3, 2, 0],
+                markPoint: {
+                    data: [
+                        {name: '周最低', value: -2, xAxis: 1, yAxis: -1.5}
+                    ]
+                },
+                markLine: {
+                    data: [
+                        {type: 'average', name: '平均值'},
+                        [{
+                            symbol: 'none',
+                            x: '90%',
+                            yAxis: 'max'
+                        }, {
+                            symbol: 'circle',
+                            label: {
+                                normal: {
+                                    position: 'start',
+                                    formatter: '最大值'
+                                }
+                            },
+                            type: 'max',
+                            name: '最高点'
+                        }]
+                    ]
+                }
+            }
+        ]
+    };
+
+    discountingEc.setOption(optionDis);
+
+</script>
+</body>
+</html>
