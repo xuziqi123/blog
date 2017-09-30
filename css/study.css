@@ -1,9 +1,8 @@
 /*学无止境开始*/
-body{background:url(../images/bg6.jpg) no-repeat;background-size:1336px 2900px;}
-.head{background:url(../images/bg1.jpg);background-size:100% 100%;border-radius:5px;}
-.main_l .left_top .con{background:url(../images/51.jpg);background-size:100% 100%;}
-.main_l .left_top .con p{color:darkslategray;overflow:hidden;}
-.main_r .tuijian ul li a{color:darkslategray;}
+body{ background:#b19251;}
+
+.main_l .left_top .con p{color: #fcfeed;overflow:hidden;}
+.main_r .tuijian ul li a{color:white;}
 /*学无止境结束*/
 /*我的世界*/
 .main-w{width:90%;height:950px;margin:10px auto;}
@@ -28,7 +27,7 @@ body{background:url(../images/bg6.jpg) no-repeat;background-size:1336px 2900px;}
 .section_w h3{width:100%;height:30px;border-radius:4px;margin-top:5px;text-align:center;background:-webkit-linear-gradient(top,#BF6022,white);}
 /*最新文章*/
 .word_tuij{width:95%;}
-.word_tuij p{width:100%;height:40px;font:bold 15px/40px arial,sans-serif;color:orangered;}
+.word_tuij p{width:100%;height:40px;font:bold 15px/40px arial,sans-serif;color: #fcfeed;}
 .word_tuij p img{width:35px;height:35px;}
 
 
