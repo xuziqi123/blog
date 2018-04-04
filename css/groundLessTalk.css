@@ -1,0 +1,17 @@
+/*
+* @Author:liwen
+* @Date:2018-04-02 20:31:35
+* @Email:li3083@126.com
+* @Last Modified by:liwen
+* @Last Modified time:2018-04-04 12:09:45
+*/
+
+.con{width:886px;border-left:1px solid white;padding:15px;float:left;}
+.info{color:white;line-height:35px;}
+.info span.proposal{font-weight:bold;}
+.info a{color:black;text-decoration:underline;color:white;}
+.question{position:relative;}
+.answer_btn{display:inline-block;width:45px;height:20px;font-size:14px;text-align:center;line-height:20px;background:skyblue;position:absolute;right:10px;cursor:pointer;border-radius:4px;}
+/* 右边部分 */
+.answer{display:none;background:rgba(0,0,0,0.3);padding:17px;border-radius:5px;}
+.section_w{float:left;}
